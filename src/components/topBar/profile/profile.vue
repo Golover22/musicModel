@@ -1,7 +1,13 @@
 <template>
-  <div class="">
-    <span class="text"> 登录 </span>
-    <span class="text"> 注册 </span>
+  <div class="profilebox">
+    <div v-if="!isLogin">
+      <span class="text" @click="btnLogin"> 登录 </span>
+      <span> / </span>
+      <span class="text" @click="btnReg"> 注册 </span>
+    </div>
+    <div v-else>
+        <span>已登录</span>
+    </div>
   </div>
 </template>
 
@@ -10,11 +16,22 @@ export default {
   name: "",
   components: {},
   data() {
-    return {};
+    return {
+        isLogin:false
+    };
   },
   computed: {},
   watch: {},
-  methods: {},
+  methods: {
+      btnLogin:function(){
+          // 登录按钮
+          alert("等待网络模块封装")
+      },
+      btnReg(){
+          // 注册按钮
+          alert("等待网络模块封装")
+      }
+  },
   created() {
     /* 被创建的时候 */
   },
@@ -30,4 +47,19 @@ export default {
 };
 </script>
 <style>
+.profilebox {
+  position: absolute;
+  right: 50px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.text {
+  position: relative;
+  display: inline-block;
+  margin-top: -5px;
+  font-size: 18px;
+}
+.text:hover {
+  color: rgba(168, 21, 21, 0.829);
+}
 </style>

@@ -1,15 +1,18 @@
 <template>
     <div class="topBar">
         <search/>
+        <profile/>
     </div>
 </template>
 
 <script>
 import search from "./searchBar/search.vue"
+import profile from "./profile/profile.vue"
 export default {
     name:'',
     components: {
         search,
+        profile,
     },
     data() {
         return {
@@ -39,7 +42,7 @@ export default {
         right: 0;
         left: 400px;
         top: 0;
-        background: #256598;
+        background: #457ca886;
         width: 900px;
         height: 40px;
         line-height: 40px;

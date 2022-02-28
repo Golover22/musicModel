@@ -25,7 +25,7 @@ export default {
   watch: {},
   methods: {
     search: function () {
-      console.log(this.key);
+      alert("等待网络模块封装")
     },
   },
   created() {
