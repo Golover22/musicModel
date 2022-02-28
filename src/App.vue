@@ -4,9 +4,21 @@
       <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> -->
     </nav>
-    <router-view />
+
+    <left-bar class="left" />
+    <router-view class="right" />
   </div>
 </template>
+
+
+<script>
+import LeftBar from "./components/left_Bar/LeftBar.vue";
+export default {
+  name: "App",
+  components: { LeftBar },
+};
+</script>
+
 
 <style>
 #app {
@@ -28,5 +40,11 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
 </style>
