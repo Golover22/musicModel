@@ -1,10 +1,11 @@
 <template>
   <div>
-    <nav>
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
-    </nav>
-    <router-view />
+    <!-- <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav> -->
+    <top-bar/>
+    <!-- <router-view /> -->
   </div>
 </template>
 
@@ -30,3 +31,11 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script>
+import topBar from "./components/topBar/topBar.vue"
+export default {
+  components:{
+    topBar
+  }
+}
+</script>
