@@ -1,30 +1,24 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <nav>
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
-    </nav>
-
     <left-bar class="left" />
+    <topBar/>
+    <center></center>
     <router-view class="right" />
-=======
-    <!-- <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav> -->
-    <top-bar/>
-    <!-- <router-view /> -->
->>>>>>> 325d763f874124b8e86e95abfbf7b2564c1a66c4
   </div>
 </template>
 
 
 <script>
 import LeftBar from "./components/left_Bar/LeftBar.vue";
+import topBar from "./components/topBar/topBar.vue";
+import center from "@/views/center/center.vue"
 export default {
   name: "App",
-  components: { LeftBar },
+  components: {
+    LeftBar,
+    topBar,
+    center,
+  },
 };
 </script>
 
@@ -36,6 +30,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 nav {
@@ -57,11 +53,3 @@ nav a.router-link-exact-active {
   float: right;
 }
 </style>
-<script>
-import topBar from "./components/topBar/topBar.vue"
-export default {
-  components:{
-    topBar
-  }
-}
-</script>

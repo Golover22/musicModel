@@ -40,7 +40,7 @@ export default {
     .topBar{
         position: fixed;
         right: 0;
-        left: 400px;
+        left: 500px;
         top: 0;
         background: #457ca886;
         width: 900px;

@@ -1,5 +1,7 @@
 <template>
-    <div class=""></div>
+    <div class="testpositon">
+        我是用来在center区域占位的组件
+    </div>
 </template>
 
 <script>
@@ -30,5 +32,10 @@ export default {
 }
 </script>
 <style>
-    
+    .testpositon{
+        position: relative;
+        height: 200px;
+        width: 900px;
+        background: rgba(31, 124, 185, 0.692);
+    }
 </style>
