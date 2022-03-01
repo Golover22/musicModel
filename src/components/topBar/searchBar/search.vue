@@ -10,12 +10,17 @@
     />
     <button @click="search" class="searchbtn"></button>
   </div>
+  <result/>
 </template>
 
 <script>
+import search from "@/network/request";
+import result from "@/views/result/result.vue"
 export default {
   name: "",
-  components: {},
+  components: {
+    result,
+  },
   data() {
     return {
       key: "",
@@ -25,7 +30,17 @@ export default {
   watch: {},
   methods: {
     search: function () {
-      alert("等待网络模块封装")
+      // alert("等待网络模块封装");
+      search.search.searchQuery(
+        this.key,
+        (res) => {
+          console.log(res.data.result.songs);
+          this.$store.state.result_MusicList=res.data.result.songs
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
     },
   },
   created() {
@@ -69,8 +84,7 @@ export default {
   top: 5px;
   border: none;
 }
-.searchbtn:hover{
+.searchbtn:hover {
   background: url("~images/topBar/search/searchHover.png");
 }
-
 </style>
