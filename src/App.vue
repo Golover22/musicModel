@@ -53,7 +53,3 @@ nav a.router-link-exact-active {
   float: right;
 }
 </style>
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a18b98912a1f4ea855d97a941dfdeb736bdaf6e
