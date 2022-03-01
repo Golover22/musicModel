@@ -21,6 +21,8 @@ import Recent from "../views/my_music/Recent"
 import MyLike from "../views/c_song_sheet/MyLike"
 //收藏的歌单
 import StoSheet from "../views/sto_sheet/StoSheet"
+//引入个性推荐
+import DisHeader from "../views/menu/dis_cover/Header"
 const routes = [
 	//menu下6个组件
 	{
@@ -90,6 +92,12 @@ const routes = [
 		path: '/sto/my_sto',
 		name: 'StoSheet',
 		component: StoSheet
+	},
+	//个性推荐
+	{
+		path: '/menu/discover/recommendation',
+		name: 'DisHeader',
+		component: DisHeader
 	},
 
 

@@ -16,8 +16,7 @@
 import search from "@/network/request";
 export default {
   name: "",
-  components: {
-  },
+  components: {},
   data() {
     return {
       key: "",
@@ -32,7 +31,7 @@ export default {
         this.key,
         (res) => {
           console.log(res.data.result.songs);
-          this.$store.state.result_MusicList=res.data.result.songs
+          this.$store.state.result_MusicList = res.data.result.songs;
         },
         (err) => {
           console.log(err);
@@ -76,12 +75,12 @@ export default {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url("~images/topBar/search/search.png");
+  background: url("@/assets/images/topBar/search/search.png");
   left: 0;
   top: 5px;
   border: none;
 }
 .searchbtn:hover {
-  background: url("~images/topBar/search/searchHover.png");
+  background: url("@/assets/images/topBar/search/searchHover.png");
 }
 </style>

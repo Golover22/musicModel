@@ -1,8 +1,8 @@
 <template>
   <div>
     <left-bar class="left" />
-    <topBar/>
-    <center></center>
+    <topBar />
+    <!-- <center></center> -->
     <router-view class="right" />
   </div>
 </template>
@@ -11,7 +11,7 @@
 <script>
 import LeftBar from "./components/left_Bar/LeftBar.vue";
 import topBar from "./components/topBar/topBar.vue";
-import center from "@/views/center/center.vue"
+import center from "@/views/center/center.vue";
 export default {
   name: "App",
   components: {
@@ -19,6 +19,7 @@ export default {
     topBar,
     center,
   },
+  
 };
 </script>
 

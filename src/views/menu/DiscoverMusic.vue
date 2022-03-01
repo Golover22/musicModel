@@ -1,17 +1,17 @@
 <template>
-  <div>DisCover</div>
-  <ul>
-    <li @click="t('/menu/discover/recommendation')">个性推荐</li>
-    <li @click="t('/menu/discover/exclusive')">专属订制</li>
-    <li @click="t('/menu/discover/exclusive')">歌单</li>
-    <li @click="t('/menu/discover/recommendation')">排行榜</li>
-    <li @click="t('/menu/discover/recommendation')">歌手</li>
-    <li @click="t('/menu/discover/recommendation')">最新音乐</li>
-  </ul>
+  <!-- <dis-header /> -->
+  <!-- <dis-banner /> -->
+  <dis-header />
+  <dis-banner />
+  <unit />
+  <unit />
   <router-view></router-view>
 </template>
 
 <script>
+import DisBanner from "./dis_cover/Banner";
+import DisHeader from "./dis_cover/Header";
+import Unit from "@/components/common/unit";
 export default {
   name: "DisCover",
   methods: {
@@ -20,6 +20,12 @@ export default {
       this.$router.push(e);
     },
   },
+  components: {
+    DisBanner,
+    DisHeader,
+    Unit,
+  },
+  Unit,
 };
 </script>
 

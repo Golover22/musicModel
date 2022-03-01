@@ -1,7 +1,13 @@
-<template></template>
+<template>
+  <div>
+    <img src="@/assets/images/img1.png" alt="" />
+  </div>
+</template>
 
 <script>
-export default {};
+export default {
+  name: "DisBanner",
+};
 </script>
 
 <style>
