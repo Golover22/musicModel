@@ -1,13 +1,33 @@
 <template>
   <div>
+<<<<<<< HEAD
+    <nav>
+      <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+    </nav>
+
+    <left-bar class="left" />
+    <router-view class="right" />
+=======
     <!-- <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav> -->
     <top-bar/>
     <!-- <router-view /> -->
+>>>>>>> 325d763f874124b8e86e95abfbf7b2564c1a66c4
   </div>
 </template>
+
+
+<script>
+import LeftBar from "./components/left_Bar/LeftBar.vue";
+export default {
+  name: "App",
+  components: { LeftBar },
+};
+</script>
+
 
 <style>
 #app {
@@ -29,6 +49,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
 </style>
 <script>
