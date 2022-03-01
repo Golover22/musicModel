@@ -1,19 +1,14 @@
 <template>
-    <div class="topBar">
-        <search/>
-        <profile/>
+    <div class="testpositon">
+        我是用来在center区域占位的组件
     </div>
 </template>
 
 <script>
-import search from "./searchBar/search.vue"
-import profile from "./profile/profile.vue"
+
 export default {
     name:'',
-    components: {
-        search,
-        profile,
-    },
+    components: {},
     data() {
         return {
 
@@ -37,16 +32,10 @@ export default {
 }
 </script>
 <style>
-    .topBar{
-        position: fixed;
-        right: 0;
-        left: 500px;
-        top: 0;
-        background: #457ca886;
+    .testpositon{
+        position: relative;
+        height: 200px;
         width: 900px;
-        height: 40px;
-        line-height: 40px;
-        padding-left: 20px;
-        text-align: left;
+        background: rgba(31, 124, 185, 0.692);
     }
 </style>

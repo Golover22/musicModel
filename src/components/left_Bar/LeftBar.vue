@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="leftBar">
     <left-menu />
     <br />
     <my-music />
@@ -27,4 +27,9 @@ export default {
 </script>
 
 <style>
+.leftBar{
+  position: relative;
+  margin-left:30px;
+  margin-top: 50px;
+}
 </style>

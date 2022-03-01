@@ -1,22 +1,19 @@
 <template>
-  <div class="searchResult">
-    <ul>
-      <li
-        class="item"
-        v-for="item in $store.state.result_MusicList"
-        :key="item.id"
-      >
-        <span>{{ item.id + "    " }} </span>
-        <span>{{ item.name }}</span>
-      </li>
-    </ul>
+  <div class="centerBar">
+    <test />
+    <result />
   </div>
 </template>
 
 <script>
+import result from "@/views/result/result.vue";
+import test from "@/views/center/test.vue";
 export default {
   name: "",
-  components: {},
+  components: {
+    result,
+    test,
+  },
   data() {
     return {};
   },
@@ -38,9 +35,12 @@ export default {
 };
 </script>
 <style>
-.searchResult {
-  height: 800px;
-  width: 900px;
-  background: rgb(173, 147, 147);
+.centerBar {
+  position: fixed;
+  right: 0;
+  left: 500px;
+  top: 40px;
+  width: 950px;
+  background: rgba(101, 185, 62, 0.548);
 }
 </style>

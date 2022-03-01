@@ -10,16 +10,13 @@
     />
     <button @click="search" class="searchbtn"></button>
   </div>
-  <result/>
 </template>
 
 <script>
 import search from "@/network/request";
-import result from "@/views/result/result.vue"
 export default {
   name: "",
   components: {
-    result,
   },
   data() {
     return {
