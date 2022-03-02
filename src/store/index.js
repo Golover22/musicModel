@@ -14,11 +14,11 @@ const mutations = {
 
 //共享的数据
 const state = {
-	result_MusicList: [],
+	result_MusicList: [], //歌单信息
 	user_Name: null,
 	user_Like: null,
-	user_Sheet: null,
-	musicPlayUrl:null,
+	user_Sheet: null, //用户歌单,id,名字
+	musicPlayUrl: null,
 }
 export default createStore({
 	state,

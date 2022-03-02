@@ -24,7 +24,7 @@ export default {
   width: 900px;
   height: 30px;
 }
-.head ul{
+.head ul {
   height: 30px;
 }
 .head ul {
@@ -33,5 +33,6 @@ export default {
 .head li {
   float: left;
   margin: 0 10px;
+  height: 10px;
 }
 </style>

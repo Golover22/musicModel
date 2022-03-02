@@ -2,12 +2,13 @@
   <div>
     <slot name="header" class="head">头部</slot>
     <slot name="context">头部</slot>
+    <!-- <slot>asdas</slot> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "Unit",
+  name: "LeftUnit",
 };
 </script>
 
