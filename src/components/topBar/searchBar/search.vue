@@ -27,11 +27,14 @@ export default {
   methods: {
     search: function () {
       // alert("等待网络模块封装");
+      if (this.key.length < 1) return;   // 限制频繁空请求
       search.search.searchQuery(
         this.key,
         (res) => {
           console.log(res.data.result.songs);
           this.$store.state.result_MusicList = res.data.result.songs;
+          // 数据请求成功就跳转到展示搜索结果
+          this.$router.push("/SearchResult");
         },
         (err) => {
           console.log(err);
@@ -76,7 +79,7 @@ export default {
   width: 30px;
   height: 30px;
   background: url("@/assets/images/topBar/search/search.png");
-  left: 0;
+  left: 25;
   top: 5px;
   border: none;
 }

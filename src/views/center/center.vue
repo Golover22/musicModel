@@ -1,5 +1,6 @@
 <template>
   <div class="centerBar">
+    <!-- 改用统一组件 -->
     <test />
     <result />
   </div>
@@ -36,11 +37,19 @@ export default {
 </script>
 <style>
 .centerBar {
-  position: fixed;
+  position: relative;
   right: 0;
-  left: 500px;
-  top: 40px;
-  width: 950px;
+  left: 50px;
+  width: 900px;
+  height: 800px;
   background: rgba(101, 185, 62, 0.548);
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+.centerBar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 0px;
 }
 </style>

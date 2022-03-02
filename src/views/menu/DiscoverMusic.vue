@@ -1,11 +1,11 @@
 <template>
-  <!-- <dis-header /> -->
-  <!-- <dis-banner /> -->
-  <dis-header />
-  <dis-banner />
-  <unit />
-  <unit />
-  <router-view></router-view>
+  <div class="discoverMusic">
+    <dis-header />
+    <dis-banner />
+    <unit />
+    <unit />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -30,4 +30,7 @@ export default {
 </script>
 
 <style>
+.discoverMusic{
+  position: relative;
+}
 </style>

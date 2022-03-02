@@ -33,9 +33,15 @@ export default {
 </script>
 
 <style>
+<<<<<<< HEAD
 .leftBar {
   /* position: relative; */
   /* margin-left: 30px; */
+=======
+.leftBar{
+  position: relative;
+  float: left;
+>>>>>>> e2b44bab3d84a629176cd6bcaf9fbdbcd15e9fbf
   margin-top: 50px;
   float: left;
   width: 200px;

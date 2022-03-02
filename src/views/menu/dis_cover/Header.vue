@@ -19,7 +19,13 @@ export default {
 
 <style>
 .head {
-  margin-top: 50px;
+  position: relative;
+  margin: 10px 0px 10px 90px;
+  width: 900px;
+  height: 30px;
+}
+.head ul{
+  height: 30px;
 }
 .head ul {
   list-style: none;

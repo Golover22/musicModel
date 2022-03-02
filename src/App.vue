@@ -1,9 +1,10 @@
 <template>
   <div>
-    <left-bar />
+    <left-bar/>
     <topBar />
     <!-- <center></center> -->
-    <router-view class="right" />
+    <router-view/>
+    <play-bar />
   </div>
 </template>
 
@@ -12,12 +13,14 @@
 import LeftBar from "./components/left_Bar/LeftBar.vue";
 import topBar from "./components/topBar/topBar.vue";
 import center from "@/views/center/center.vue";
+import playBar from "@/components/playBar/playBar.vue";
 export default {
   name: "App",
   components: {
     LeftBar,
     topBar,
     center,
+    playBar,
   },
 };
 </script>
