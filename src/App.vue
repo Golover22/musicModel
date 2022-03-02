@@ -1,6 +1,6 @@
 <template>
   <div>
-    <left-bar class="left" />
+    <left-bar />
     <topBar />
     <!-- <center></center> -->
     <router-view class="right" />
@@ -19,7 +19,6 @@ export default {
     topBar,
     center,
   },
-  
 };
 </script>
 
@@ -47,9 +46,7 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-.left {
-  float: left;
-}
+
 .right {
   float: right;
 }
