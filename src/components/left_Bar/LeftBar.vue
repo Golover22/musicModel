@@ -29,7 +29,7 @@ export default {
 <style>
 .leftBar{
   position: relative;
-  margin-left:30px;
+  float: left;
   margin-top: 50px;
 }
 </style>

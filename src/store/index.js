@@ -18,6 +18,7 @@ const state = {
 	user_Name: null,
 	user_Like: null,
 	user_Sheet: null,
+	musicPlayUrl:null,
 }
 export default createStore({
 	state,

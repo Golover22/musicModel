@@ -38,13 +38,11 @@ export default {
 </script>
 <style>
     .topBar{
-        position: fixed;
-        right: 0;
-        left: 500px;
-        top: 0;
+        position: relative;
+        left: 150px;
         background: #457ca886;
         width: 900px;
-        height: 40px;
+        height: 50px;
         line-height: 40px;
         padding-left: 20px;
         text-align: left;
