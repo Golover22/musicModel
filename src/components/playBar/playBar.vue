@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     getUrl() {
-      return this.$store.state.musicPlayUrl;
+      return this.$store.getters.getmusicPlayUrl
     },
   },
   watch: {},

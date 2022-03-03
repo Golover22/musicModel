@@ -11,12 +11,12 @@
         class="item"
         v-for="item in getMusic"
         :key="item.id"
-        @dblclick="btnsongs(item.id)"
+        @dblclick="btnsongs(item.id,item.name,item.artists)"
       >
         <span
           class="songinfo musicname"
           :title="item.name"
-          @click="btnsongs(item.id)"
+          @click="btnsongs(item.id,item.name,item.artists)"
           >{{ item.name }}</span
         >
         <div class="singer">
@@ -54,10 +54,14 @@ export default {
   },
   watch: {},
   methods: {
-    btnsongs(id) {
+    btnsongs(id,musicName,singerLisst) {
       // 发起网络请求获取歌曲播放链接
       this.$store.state.musicPlayUrl=""
       console.log(id);
+      let singers=""
+      for(let i in singerLisst){
+        singers+=i<singerLisst.length-1?singerLisst[i].name+"/":singerLisst[i].name
+      }
       // 检查歌曲是否能播放
       let isTrue = true;
       request.search
@@ -71,14 +75,17 @@ export default {
         })
         .catch((err) => {
           console.log(err);
+          alert("暂时不能播放 该歌曲还在努力争取中!")
           isTrue = false;
         });
       // 获取出错或不能播放
       if (isTrue == false) {
         return;
       }
-      this.$store.state.musicPlayUrl =
-        "https://music.163.com/song/media/outer/url?id=" + id + ".mp3 ";
+      let url="https://music.163.com/song/media/outer/url?id=" + id + ".mp3 "
+      this.$store.commit("setMusicUrl",url)
+      this.$store.commit("setCurrentMusicName",musicName)
+      this.$store.commit("setCurrentSinger",singers)
     },
   },
   created() {

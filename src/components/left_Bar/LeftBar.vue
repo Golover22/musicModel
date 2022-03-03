@@ -4,9 +4,9 @@
     <left-unit />
     <!-- <unit></unit> -->
     <br />
-    <!-- <my-like /> -->
+    <my-like />
     <br />
-    <!-- <sto-sheet /> -->
+    <sto-sheet />
   </div>
 </template>
 

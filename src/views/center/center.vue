@@ -39,7 +39,7 @@ export default {
 .centerBar {
   position: relative;
   right: 0;
-  left: 50px;
+  left: 0px;
   width: 900px;
   height: 800px;
   background: rgba(101, 185, 62, 0.548);
