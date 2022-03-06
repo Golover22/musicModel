@@ -19,7 +19,7 @@ export default {
   components: {},
   data() {
     return {
-      key: "",
+      key: "飞得更高",
     };
   },
   computed: {},
